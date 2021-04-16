@@ -1,8 +1,7 @@
 {
     "Header": {
-
-        "title": "We are a Landing Page",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+        "title": "Личные финансы",
+        "paragraph": "Бесплатный удобный сервис для учета доходов и расходов"
 
     },
     "About": {
@@ -105,9 +104,9 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
+        "address": "г. Москва, ул. Академика Скрябина, д. 9, стр. 4",
+        "phone": "+7 (495) 260-52-89",
+        "email": "hotline@eduprof.ru",
         "facebook": "fb.com",
         "twitter": "twitter.com",
         "youtube": "youtube.com"
