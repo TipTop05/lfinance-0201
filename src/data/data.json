@@ -70,23 +70,23 @@
         }
     ],
     "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "John Doe",
-            "job": "Director"
+            "img": "img/team/05.jpg",
+            "name": "Сергей",
+            "job": "Идейный вдохновитель"
         },
         {
             "img": "img/team/02.jpg",
-            "name": "Mike Doe",
-            "job": "Senior Designer"
+            "name": "Дмитрий",
+            "job": "Веб-разработчик"
         }, {
             "img": "img/team/03.jpg",
-            "name": "Jane Doe",
-            "job": "Senior Designer"
+            "name": "Анна",
+            "job": "Веб-разработчик"
         },
         {
             "img": "img/team/04.jpg",
-            "name": "Karen Doe",
-            "job": "Project Manager"
+            "name": "Елизавета",
+            "job": "Дизайнер"
         }
     ],
     "Contact": {
