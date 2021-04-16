@@ -9,7 +9,7 @@
 
 
         "Why": [
-            "Знать, куда уходят ваши деньги?",
+            "Знать, куда уходят ваши деньги",
             "Экономить и копить эффективно",
             "Навести порядок в своих финансах",
             "Быть уверенным в своём финансовом будущем"
@@ -40,33 +40,18 @@
     ],
     "Testimonials": [{
             "img": "img/testimonials/01.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
+            "text": "Сервис реально помогает экономить! После первого месяца использования, выделил для себя несколько категорий, по которым в следующем месяце смог сократить расход в 2 раза!",
+            "name": "Владимир"
         },
         {
             "img": "img/testimonials/02.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/03.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/05.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
+            "text": "Просто и удобно! Отличное приложение, остановился на нем после долгих поисков. Кроме своих счетов добавил с женой общий счет, чтобы мониторить расход семейного бюджета.",
+            "name": "Евгений"
         },
         {
             "img": "img/testimonials/06.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "text": "Классное приложение, приятный дизайн! Особенно нравится раздел \"Статистика\", помогает визуально увидеть сколько трачу на посиделки в кафе, продукты, одежду, товары для дома, ...  :)",
+            "name": "Диана"
         }
     ],
     "Team": [{

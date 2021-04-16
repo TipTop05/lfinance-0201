@@ -5,7 +5,7 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Что мы предлагаем?</h2>
+          <h2>Что мы предлагаем ?</h2>
           <p>
             Простой способ ведения учета доходов и расходов
           </p>
