@@ -1,8 +1,12 @@
+// Навигационная панель (Меню)
+
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
+
         <div className='navbar-header'>
+          {/* Код button ниже делает Меню бургер на мобильной версии сайта  */}
           <button
             type='button'
             className='navbar-toggle collapsed'
@@ -15,10 +19,13 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
+
           <a className='navbar-brand page-scroll' href='#page-top'>
             Личные финансы
           </a>{' '}
         </div>
+
+
 
         <div
           className='collapse navbar-collapse'
@@ -61,7 +68,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href='#team' className='page-scroll'>
-                Наша команда
+                Команда
               </a>
             </li>
             <li>
@@ -69,7 +76,14 @@ export const Navigation = (props) => {
                 Контакты
               </a>
             </li>
+            {/* Создали кнопку ВХОД */}
+            <li>
+              <button type="button" className="btn btn-default navbar-btn">
+                ВХОД
+              </button>
+            </li>
           </ul>
+
         </div>
       </div>
     </nav>
