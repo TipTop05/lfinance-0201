@@ -1,4 +1,4 @@
-//  Features = Зачем это нужно?
+// Features = Особенности
 
 export const Features = (props) => {
   return (

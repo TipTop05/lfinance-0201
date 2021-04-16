@@ -5,12 +5,14 @@
 
     },
     "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "paragraph": "Учет расходов помогает экономить и избегать лишних трат! Поделив свои расходы на категории в конце месяца можно посмотреть статистику на что тратились деньги. Это позволит выделить для себя ненужные расходы и спланировать оптимальный бюджет на следующий месяц.",
+
+
         "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
+            "Знать, куда уходят ваши деньги?",
+            "Экономить и копить эффективно",
+            "Навести порядок в своих финансах",
+            "Быть уверенным в своём финансовом будущем"
         ],
         "Why2": [
             "Aliquip ex ea commodo",

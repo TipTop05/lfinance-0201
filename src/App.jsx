@@ -26,13 +26,14 @@ const App = () => {
     <div>
       <Navigation />
       <Header data={landingPageData.Header} />
+      {/* убираем Особенности (Features)
       <Features data={landingPageData.Features} />
+      */}
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       {/* убираем Галерею
       <Gallery />
       */}
-
       <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
