@@ -21,38 +21,22 @@
             "Lorem ipsum dolor"
         ]
     },
-    "Services": [{
-            "icon": "fa fa-rub",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
+    "Services": [
         {
             "icon": "fa fa-bar-chart",
             "name": "Доходы и расходы",
             "text": "Разбейте ваши поступления и платежи на категории, анализируйте статистику, планируйте бюджет на следующий месяц."
         },
         {
-            "icon": "fa fa-cloud-download",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-pie-chart",
+            "name": "Графики и отчеты",
+            "text": "Визуальный набор отчетов, отражающих структуру и динамику ваших доходов и расходов."
         },
         {
             "icon": "fa fa-users",
             "name": "Совместный учёт",
             "text": "Ведите учет совместо с членами семьи, друзьями, бизнес-партнерами."
-        },
-        {
-            "icon": "fa fa-plane",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-pie-chart",
-            "name": "Графики и отчеты",
-            "text": "Визуальный набор отчетов, отражающих структуру и динамику ваших доходов и расходов."
         }
-
-
     ],
     "Testimonials": [{
             "img": "img/testimonials/01.jpg",
