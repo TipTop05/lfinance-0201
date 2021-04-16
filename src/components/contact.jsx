@@ -89,7 +89,7 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  Отправить
                 </button>
               </form>
             </div>
@@ -131,8 +131,13 @@ export const Contact = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
+                    <a href={props.data ? props.data.instagram : '/'}>
+                      <i className='fa fa-instagram'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.vk : '/'}>
+                      <i className='fa fa-vk'></i>
                     </a>
                   </li>
                   <li>

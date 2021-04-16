@@ -1,12 +1,13 @@
+//  Services = Что мы предлагаем?
+
 export const Services = (props) => {
   return (
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Our Services</h2>
+          <h2>Что мы предлагаем?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Простой способ ведения учета доходов и расходов
           </p>
         </div>
         <div className='row'>

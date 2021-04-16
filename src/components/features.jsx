@@ -1,3 +1,5 @@
+//  Features = Зачем это нужно?
+
 export const Features = (props) => {
   return (
     <div id='features' className='text-center'>
