@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Navigation } from './components/Navigation'
 import { Header } from './components/Header'
-import { Features } from './components/Features'
 import { About } from './components/About'
 import { Services } from './components/Services'
-import { Gallery } from './components/Gallery'
 import { Testimonials } from './components/Testimonials'
 import { Team } from './components/Team'
 import { Contact } from './components/Contact'
@@ -26,14 +24,8 @@ const App = () => {
     <div>
       <Navigation />
       <Header data={landingPageData.Header} />
-      {/* убираем Особенности (Features)
-      <Features data={landingPageData.Features} />
-      */}
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
-      {/* убираем Галерею
-      <Gallery />
-      */}
       <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
