@@ -12,6 +12,7 @@ import { LoginPage } from './components/LoginPage'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
 import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
+import {Auth} from "./components/Auth";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/login">
             <LoginPage />
           </Route>
+          <Route path="/auth" render={()=><Auth/>}/>
           <Route path="*">
             <Redirect to="/" />
           </Route>

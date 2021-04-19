@@ -1,17 +1,17 @@
 <?php
-  header("Access-Control-Allow-Origin: *");
+  header("Access-Control-Allow-Origin: http://localhost:3000");
+  header('Access-Control-Allow-Credentials: true');
+  header('Content-type: text/html; charset=utf-8');
   session_start();
   $mysqli = new mysqli('localhost','root','root','f92553mg_0201');
   $email = trim(mb_strtolower($_POST['email']));
   $pass = trim($_POST['pass']);
-  $result = $mysqli->query("SELECT * FROM `users` WHERE `email`='$email'");
+  $result = $mysqli->query("SELECT * FROM `users_lf` WHERE `email`='$email'");
   $row = $result->fetch_assoc(); //Преобразуем ответ от базы данных в массив
   //var_dump($row);
   if(password_verify($pass,$row['pass'])){
-    $_SESSION['name'] = $row['name'];
-    $_SESSION['lastname'] = $row['lastname'];
     $_SESSION['email'] = $row['email'];
-    $_SESSION['id'] = $row['id'];
+    $_SESSION['user_id'] = $row['user_id'];
     echo json_encode(['result'=>'success']);
   }else{
     echo json_encode(['result'=>'error']);
