@@ -5,6 +5,7 @@ export const Navigation = (props) => {
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
 
+        {/* Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях */}
         <div className='navbar-header'>
           {/* Код button ниже делает Меню бургер на мобильной версии сайта  */}
           <button
@@ -15,18 +16,29 @@ export const Navigation = (props) => {
           >
             {' '}
             <span className='sr-only'>Toggle navigation</span>{' '}
+            {/* // Три тега span образуют три горизонтальные линии, похожие на кнопку, известную как значок «бургер» */}
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
 
           <a className='navbar-brand page-scroll' href='#page-top'>
+            <i className='fa fa-pie-chart'></i>&nbsp;
+            {/* Не вставляется логотип почему-то
+            <img
+              alt=""
+              src="/logo.svg"
+              width="20"
+              height="20"
+              className="d-inline-block align-top"
+            />
+            */}
             Личные финансы
           </a>{' '}
         </div>
 
 
-
+        {/*  Ниже навигационные ссылки, формы, и другой контент для переключения */}
         <div
           className='collapse navbar-collapse'
           id='bs-example-navbar-collapse-1'
