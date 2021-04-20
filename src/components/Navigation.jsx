@@ -1,5 +1,7 @@
 // Навигационная панель (Меню)
 
+import {NavLink} from "react-router-dom";
+
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -23,7 +25,8 @@ export const Navigation = (props) => {
           </button>
 
           <a className='navbar-brand page-scroll' href='#page-top'>
-            <i className='fa fa-pie-chart'></i>&nbsp;
+            <i className='fa fa-pie-chart'></i>
+            &nbsp;
             {/* Не вставляется логотип почему-то
             <img
               alt=""
@@ -73,7 +76,7 @@ export const Navigation = (props) => {
             {/* Создали кнопку ВХОД */}
             <li>
               <button type="button" className="btn btn-default navbar-btn">
-                ВХОД
+                <NavLink className="nav-link" to="/auth">ВХОД</NavLink>
               </button>
             </li>
           </ul>

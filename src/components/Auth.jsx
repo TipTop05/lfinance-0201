@@ -47,12 +47,13 @@ export class Auth extends React.Component{
       return (
         <div className="container">
           <div className="col-sm-5 mx-auto">
+            <h1>Авторизация</h1>
             <form onSubmit={this.handleSubmit}>
               <div className="mb-3">
-                <input value={this.state.email} onChange={this.handleInput} name="email" type="text" className="form-control" placeholder="login"/>
+                <input value={this.state.email} onChange={this.handleInput} name="email" type="text" className="form-control" placeholder="E-mail"/>
               </div>
               <div className="mb-3">
-                <input value={this.state.pass} onChange={this.handleInput} name="pass" type="password" className="form-control" placeholder="pass"/>
+                <input value={this.state.pass} onChange={this.handleInput} name="pass" type="password" className="form-control" placeholder="Пароль"/>
               </div>
               <div className="mb-3 text-center">
                 <input type="submit" value="Войти" className="btn btn-primary"/>
