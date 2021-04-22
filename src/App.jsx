@@ -9,10 +9,12 @@ import { Contact } from './components/Contact'
 import { Finance } from './components/Finance'
 import { Profile } from './components/Profile'
 import { LoginPage } from './components/LoginPage'
+import { Auth } from "./components/Auth";
+import { Reg } from "./components/Reg";
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
 import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
-import {Auth} from "./components/Auth";
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -47,7 +49,12 @@ const App = () => {
           <Route path="/login">
             <LoginPage />
           </Route>
-          <Route path="/auth" render={()=><Auth/>}/>
+          <Route path="/auth">
+            <Auth />
+          </Route>
+          <Route path="/reg">
+            <Reg />
+          </Route>
           <Route path="*">
             <Redirect to="/" />
           </Route>

@@ -1,9 +1,7 @@
-// Навигационная панель (Меню)
-
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-export const Navigation = (props) => {
+export const Navigation2 = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -53,27 +51,7 @@ export const Navigation = (props) => {
                 Зачем это нужно ?
               </a>
             </li>
-            <li>
-              <a href='#services' className='page-scroll'>
-                Что мы предлагаем ?
-              </a>
-            </li>
 
-            <li>
-              <a href='#testimonials' className='page-scroll'>
-                Отзывы
-              </a>
-            </li>
-            <li>
-              <a href='#team' className='page-scroll'>
-                Команда
-              </a>
-            </li>
-            <li>
-              <a href='#contact' className='page-scroll'>
-                Контакты
-              </a>
-            </li>
             {/* Создали кнопку ВХОД */}
             <li>
               <button type="button" className="btn btn-default navbar-btn">

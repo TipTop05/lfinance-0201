@@ -29,6 +29,14 @@ class Reg{
 		}
   }
 	
+  static function checkEmail($email){
+    global $mysqli;
+    $email = trim(mb_strtolower($_POST['email']));
+    if($result->num_rows){
+    echo json_encode(['result'=>'exist']);
+    }else{
+    echo json_encode(['result'=>'not found']);
+  }
 
 }
 ?>
