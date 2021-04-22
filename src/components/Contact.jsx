@@ -69,7 +69,7 @@ export const Contact = (props) => {
                         id='email'
                         name='email'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='E-mail'
                         required
                         onChange={handleChange}
                       />
@@ -117,7 +117,7 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-envelope-o'></i> Email
+                  <i className='fa fa-envelope-o'></i> E-mail
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
               </p>

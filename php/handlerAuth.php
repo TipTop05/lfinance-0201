@@ -1,8 +1,8 @@
 <?php
-  header("Access-Control-Allow-Origin: http://localhost:3000");
+  header("Access-Control-Allow-Origin: localhost:3000");
   header("Access-Control-Allow-Credentials: true");
-  header("Access-Control-Allow-Methods: GET, POST, HEAD, OPTIONS, PUT, DELETE, PATCH");
-  header("Access-Control-Allow-Headers: Origin, Content-Type, Accept");
+  // header("Access-Control-Allow-Methods: GET, POST, HEAD, OPTIONS, PUT, DELETE, PATCH");
+  // npmheader("Access-Control-Allow-Headers: Origin, Content-Type, Accept");
   session_start();
   $mysqli = new mysqli('localhost','root','root','f92553mg_0201');
   $email = trim(mb_strtolower($_POST['email']));

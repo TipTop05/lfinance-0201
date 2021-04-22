@@ -3,7 +3,7 @@
   header('Access-Control-Allow-Credentials: true');
   header('Content-type: text/html; charset=utf-8');
   session_start();  // Создание сессии (сеанса) в PHP
-	$uri = explode('/',$_SERVER["REQUEST_URI"]);
+  $uri = explode('/',$_SERVER["REQUEST_URI"]);
   require_once('php/db.php'); // Добавляем в router.php Параметры подключения к БД
   require_once('php/classes/Reg.php'); // Добавляем в router.php все функции для регистрации/авторизации 
   require_once('php/classes/Blog.php'); // Добавляем в router.php все функции для работе с блогом 
