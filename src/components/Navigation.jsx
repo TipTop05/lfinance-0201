@@ -25,19 +25,22 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
 
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            &nbsp;
+          <a className='navbar-left page-scroll' href='#page-top'>
             <img
-              alt=""
-              src="/logo.svg"
-              width="50"
-              height="50"
+              alt="logo"
+              src="/logo-lf.svg"
+              width="45"
+              height="45"
               className="d-inline-block align-top"
             />
-            Личные финансы
-          </a>{' '}
-        </div>
+            </a>
+            <a className='navbar-brand page-scroll' href='#page-top'>
+              &nbsp;
+              Личные финансы
+           </a>{' '}
 
+        </div>
+        {/* Конец кода Brand и toggle */}
 
         {/*  Ниже навигационные ссылки, формы, и другой контент для переключения */}
         <div
@@ -79,8 +82,8 @@ export const Navigation = (props) => {
             </li>
           </ul>
 
-        </div>
-      </div>
+        </div> {/* navbar-collapse */}
+      </div> {/* container */}
     </nav>
   )
 }
