@@ -6,11 +6,14 @@ import { Services } from './components/Services'
 import { Testimonials } from './components/Testimonials'
 import { Team } from './components/Team'
 import { Contact } from './components/Contact'
-import { Finance } from './components/Finance'
-import { Profile } from './components/Profile'
-import { LoginPage } from './components/LoginPage'
 import { Auth } from "./components/Auth";
 import { Reg } from "./components/Reg";
+import { Navigation2 } from './cabinet/Navigation2'
+import { LoginPage } from './components/LoginPage'
+import { Finance } from './cabinet/Finance'
+import { Profile } from './cabinet/Profile'
+import { Statistics } from './cabinet/Statistics'
+import { Start } from './cabinet/Start'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
 import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
@@ -41,11 +44,22 @@ const App = () => {
             <Contact data={landingPageData.Contact} />
           </Route>
           <Route path="/finance">
+            <Navigation2 />
             <Finance />
           </Route>
           <Route path="/profile">
+            <Navigation2 />
             <Profile />
           </Route>
+          <Route path="/statistics">
+            <Navigation2 />
+            <Statistics />
+          </Route>
+          <Route path="/start">
+            <Navigation2 />
+            <Start />
+          </Route>
+
           <Route path="/login">
             <LoginPage />
           </Route>

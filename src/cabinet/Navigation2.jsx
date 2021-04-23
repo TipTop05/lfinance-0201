@@ -1,3 +1,5 @@
+// Меню личного кабинета
+
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
@@ -23,22 +25,22 @@ export const Navigation2 = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
 
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            <i className='fa fa-pie-chart'></i>
-            &nbsp;
-            {/* Не вставляется логотип почему-то
+          <a className='navbar-left page-scroll' href='#page-top'>
             <img
-              alt=""
-              src="/logo.svg"
-              width="20"
-              height="20"
+              alt="logo"
+              src="/logo-lf.svg"
+              width="45"
+              height="45"
               className="d-inline-block align-top"
             />
-            */}
+          </a>
+          <a className='navbar-brand page-scroll' href='#page-top'>
+            &nbsp;
             Личные финансы
           </a>{' '}
-        </div>
 
+        </div>
+        {/* Конец кода Brand и toggle */}
 
         {/*  Ниже навигационные ссылки, формы, и другой контент для переключения */}
         <div
@@ -46,16 +48,29 @@ export const Navigation2 = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
+
             <li>
-              <a href='#about' className='page-scroll'>
-                Зачем это нужно ?
-              </a>
+              <NavLink className="nav-link" to="/finance">Мои финансы</NavLink>
             </li>
 
-            {/* Создали кнопку ВХОД */}
+            <li>
+              <NavLink className="nav-link" to="/statistics">Статистика</NavLink>
+            </li>
+
+            <li>
+              <NavLink className="nav-link" to="/profile">Профиль</NavLink>
+            </li>
+
+            <li>
+              <NavLink className="nav-link" to="/start">С чего начать?</NavLink>
+            </li>
+
+
+
+            {/* Кнопка ВЫХОД */}
             <li>
               <button type="button" className="btn btn-default navbar-btn">
-                <NavLink className="nav-link" to="/login">ВХОД</NavLink>
+                <NavLink className="nav-link" to="/">ВЫХОД</NavLink>
               </button>
             </li>
           </ul>

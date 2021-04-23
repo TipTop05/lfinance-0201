@@ -1,4 +1,4 @@
-// Навигационная панель (Меню)
+// Меню главной страницы
 
 import React from 'react';
 import {NavLink} from "react-router-dom";
@@ -48,11 +48,13 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
+
             <li>
               <a href='#about' className='page-scroll'>
                 Зачем это нужно ?
               </a>
             </li>
+
             <li>
               <a href='#services' className='page-scroll'>
                 Что мы предлагаем ?
@@ -64,16 +66,19 @@ export const Navigation = (props) => {
                 Отзывы
               </a>
             </li>
+
             <li>
               <a href='#team' className='page-scroll'>
                 Команда
               </a>
             </li>
+
             <li>
               <a href='#contact' className='page-scroll'>
                 Контакты
               </a>
             </li>
+
             {/* Создали кнопку ВХОД */}
             <li>
               <button type="button" className="btn btn-default navbar-btn">
