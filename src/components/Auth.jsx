@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {host} from "../config";
-import {Redirect} from 'react-router-dom'
+import {Link,Redirect} from 'react-router-dom'
 
 export class Auth extends React.Component {
   constructor(props) {
@@ -51,6 +51,7 @@ export class Auth extends React.Component {
     } else {
       return (
         <div className="container">
+          <Link to="/reg">Регистрация</Link>
           <div className="col-md-5 my-5 mx-auto">
             <h1 className="text-center my-3">Авторизация</h1>
             <form onSubmit={this.handleSubmit}>

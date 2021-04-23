@@ -26,17 +26,14 @@ export const Navigation = (props) => {
           </button>
 
           <a className='navbar-brand page-scroll' href='#page-top'>
-            <i className='fa fa-pie-chart'></i>
             &nbsp;
-            {/* Не вставляется логотип почему-то
             <img
               alt=""
               src="/logo.svg"
-              width="20"
-              height="20"
+              width="50"
+              height="50"
               className="d-inline-block align-top"
             />
-            */}
             Личные финансы
           </a>{' '}
         </div>
@@ -77,7 +74,7 @@ export const Navigation = (props) => {
             {/* Создали кнопку ВХОД */}
             <li>
               <button type="button" className="btn btn-default navbar-btn">
-                <NavLink className="nav-link" to="/login">ВХОД</NavLink>
+                <NavLink className="nav-link" to="/auth">ВХОД</NavLink>
               </button>
             </li>
           </ul>
