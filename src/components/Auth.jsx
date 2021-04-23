@@ -10,6 +10,7 @@ export class Auth extends React.Component {
     this.state = {
       email: "",
       pass: "",
+      info:"",
       redirect: false
     }
     this.handleInput = this.handleInput.bind(this);
@@ -21,6 +22,9 @@ export class Auth extends React.Component {
     const value = e.target.value;
     this.setState({
       [name]: value
+    })
+    this.setState({
+      info: ""
     })
   }
 
@@ -39,6 +43,10 @@ export class Auth extends React.Component {
         if (result.result === "success") {
           this.setState({
             redirect: true
+          })
+        } else {
+          this.setState({
+            info: "Логин или пароль введены неверено"
           })
         }
       });
@@ -62,6 +70,7 @@ export class Auth extends React.Component {
               <div className="mb-3">
                 <input value={this.state.pass} onChange={this.handleInput} name="pass" type="password"
                        className="form-control" placeholder="Пароль"/>
+                <p style={{color:"red", textAlign:"center"}}>{this.state.info}</p>
               </div>
               <div className="mb-3 text-center">
                 <input type="submit" value="Войти" className="btn btn-primary"/>

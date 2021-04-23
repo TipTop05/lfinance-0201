@@ -1,5 +1,5 @@
 <?
-// Этот код писал я!!!!!!!!!!!!!!!!
+// Этот код проинспектировали на вебинаре 23.04.2021
 class Reg{
   static function handlerReg($email,$pass){
     global $mysqli;
@@ -39,5 +39,6 @@ class Reg{
         echo json_encode(['result'=>'not found']);
     }
   }
+
 }
 ?>

@@ -19,8 +19,7 @@
     Blog::addPost($_POST['title'],$_POST['text'],$_POST['author'],$_POST['category'],$_POST['newCategory']);
   }
   
-  // Не понятно как прописать пути, если Авторизация и Регистрация на одной странице?
-  // Еще не понятно как прописать при Регистрации - что нужно проводить Проверку e-mail
+  // Этот код проинспектировали на вебинаре 23.04.2021
   else if($uri[1]=='handlerReg'){
 	Reg::handlerReg($_POST['email'],$_POST['pass']);
   }else if($uri[1]=='handlerAuth'){
