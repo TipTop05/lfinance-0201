@@ -25,7 +25,7 @@ export const Navigation2 = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
 
-          <a className='navbar-left page-scroll' href='#page-top'>
+          <NavLink className="navbar-left page-scroll" to="/finance">
             <img
               alt="logo"
               src="/logo-lf.svg"
@@ -33,11 +33,11 @@ export const Navigation2 = (props) => {
               height="45"
               className="d-inline-block align-top"
             />
-          </a>
-          <a className='navbar-brand page-scroll' href='#page-top'>
+          </NavLink>
+          <NavLink  className="navbar-brand page-scroll" to="/finance">
             &nbsp;
             Личные финансы
-          </a>{' '}
+          </NavLink>{' '}
 
         </div>
         {/* Конец кода Brand и toggle */}

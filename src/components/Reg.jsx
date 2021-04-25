@@ -75,7 +75,7 @@ export class Reg extends React.Component{
   render() {
     const redirect = this.state.redirect;
     if (redirect) {
-      return <Redirect to="/"/>;
+      return <Redirect to="/start"/>;
     } else {
       return (
         <div className="container">
