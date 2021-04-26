@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import {host} from "../config";
 
 export const Navigation2 = (props) => {
   return (
@@ -68,11 +69,27 @@ export const Navigation2 = (props) => {
 
 
             {/* Кнопка ВЫХОД */}
+
             <li>
               <button type="button" className="btn btn-default navbar-btn">
                 <NavLink className="nav-link" to="/">ВЫХОД</NavLink>
               </button>
             </li>
+
+            {/*  Пытался сделать ВЫХОД с закрытием сессии
+            <li>
+              <button type="button" className="btn btn-default navbar-btn" onClick={() => {
+                fetch(host + "/sessionDestroy", {
+                  credentials: 'include'
+                })
+                  .then(response => response.text())
+                  .then(result => console.log(result));
+              }
+              }><NavLink to="/">ВЫХОД</NavLink>
+              </button>
+            </li>
+            */}
+
           </ul>
 
         </div>

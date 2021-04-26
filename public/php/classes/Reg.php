@@ -14,6 +14,7 @@ class Reg{
       echo json_encode(['result'=>'success']);
     }
   }
+
   static function handlerAuth($email,$pass){
     global $mysqli;
     $email = trim(mb_strtolower($email));

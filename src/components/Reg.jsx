@@ -2,9 +2,9 @@
 
 import React from "react";
 import {host} from "../config";
-import {Link,Redirect} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 
-export class Reg extends React.Component{
+export class Reg extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -18,7 +18,6 @@ export class Reg extends React.Component{
   }
 
   sendForm(event) {
-    {/* event.preventDefault() - Изменяем поведение браузера по умолчанию */}
     event.preventDefault();
     const formData = new FormData();
     formData.append("email", this.state.email);
@@ -78,24 +77,29 @@ export class Reg extends React.Component{
       return <Redirect to="/start"/>;
     } else {
       return (
-        <div className="container">
-          <Link to="/auth">Авторизация</Link>
-          <div className="col-md-3 my-5 mx-auto">
-            <h1 className="text-center my-3">Регистрация</h1>
-            <form onSubmit={this.sendForm}>
-              <div className="mb-3">
-                <input value={this.state.email} onChange={this.handleInputChange} name="email" type="email"
-                       className="form-control" placeholder="E-mail"/>
-                <p style={{color: "red"}}><small>{this.state.info}</small></p>
+        <div id='portfolio'>
+          <div className="container">
+            <div className='row'>
+              <br/>
+              <Link to="/auth">Авторизация</Link>
+              <div className="col-md-3 col-md-offset-4 my-4">
+                <h1 className="text-center my-3">Регистрация</h1>
+                <form onSubmit={this.sendForm}>
+                  <div className="mb-3">
+                    <input value={this.state.email} onChange={this.handleInputChange} name="email" type="email"
+                           className="form-control" placeholder="E-mail"/>
+                    <p style={{color: "red"}}><small>{this.state.info}</small></p>
+                  </div>
+                  <div className="mb-3">
+                    <input value={this.state.pass} onChange={this.handleInputChange} name="pass" type="password"
+                           className="form-control" placeholder="Пароль"/>
+                  </div>
+                  <div className="mb-3 text-center">
+                    <input type="submit" className="btn btn-primary" value="Зарегистрироваться"/>
+                  </div>
+                </form>
               </div>
-              <div className="mb-3">
-                <input value={this.state.pass} onChange={this.handleInputChange} name="pass" type="password"
-                       className="form-control" placeholder="Пароль"/>
-              </div>
-              <div className="mb-3 text-center">
-                <input type="submit" className="btn btn-primary" value="Зарегистрироваться"/>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       )

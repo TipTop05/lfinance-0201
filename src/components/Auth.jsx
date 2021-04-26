@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {host} from "../config";
-import {Link,Redirect} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 
 export class Auth extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export class Auth extends React.Component {
     this.state = {
       email: "",
       pass: "",
-      info:"",
+      info: "",
       redirect: false
     }
     this.handleInput = this.handleInput.bind(this);
@@ -58,24 +58,29 @@ export class Auth extends React.Component {
       return <Redirect to="/finance"/>;
     } else {
       return (
-        <div className="container">
-          <Link to="/reg">Регистрация</Link>
-          <div className="col-md-3 my-5 mx-auto">
-            <h1 className="text-center my-3">Авторизация</h1>
-            <form onSubmit={this.handleSubmit}>
-              <div className="mb-3">
-                <input value={this.state.email} onChange={this.handleInput} name="email" type="email"
-                       className="form-control" placeholder="E-mail"/>
+        <div id='portfolio'>
+          <div className="container ">
+            <div className='row'>
+              <br/>
+              <Link to="/reg">Регистрация</Link>
+              <div className="col-md-3 col-md-offset-4 my-4">
+                <h1 className="text-center my-3">Авторизация</h1>
+                <form onSubmit={this.handleSubmit}>
+                  <div className="mb-3">
+                    <input value={this.state.email} onChange={this.handleInput} name="email" type="email"
+                           className="form-control" placeholder="E-mail"/>
+                  </div>
+                  <div className="mb-3">
+                    <input value={this.state.pass} onChange={this.handleInput} name="pass" type="password"
+                           className="form-control" placeholder="Пароль"/>
+                    <p style={{color: "red", textAlign: "center"}}><small>{this.state.info}</small></p>
+                  </div>
+                  <div className="mb-3 text-center">
+                    <input type="submit" value="Войти" className="btn btn-primary"/>
+                  </div>
+                </form>
               </div>
-              <div className="mb-3">
-                <input value={this.state.pass} onChange={this.handleInput} name="pass" type="password"
-                       className="form-control" placeholder="Пароль"/>
-                <p style={{color:"red", textAlign:"center"}}><small>{this.state.info}</small></p>
-              </div>
-              <div className="mb-3 text-center">
-                <input type="submit" value="Войти" className="btn btn-primary"/>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       )

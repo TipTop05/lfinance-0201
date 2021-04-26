@@ -9,7 +9,6 @@ import { Contact } from './components/Contact'
 import { Auth } from "./components/Auth";
 import { Reg } from "./components/Reg";
 import { Navigation2 } from './cabinet/Navigation2'
-import { LoginPage } from './components/LoginPage'
 import { Finance } from './cabinet/Finance'
 import { Profile } from './cabinet/Profile'
 import { Statistics } from './cabinet/Statistics'
@@ -60,13 +59,12 @@ const App = () => {
             <Start />
           </Route>
 
-          <Route path="/login">
-            <LoginPage />
-          </Route>
           <Route path="/auth">
+            <Navigation />
             <Auth />
           </Route>
           <Route path="/reg">
+            <Navigation />
             <Reg />
           </Route>
           <Route path="*">

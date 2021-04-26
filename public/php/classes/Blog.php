@@ -11,11 +11,13 @@ class Blog{
       }
       echo json_encode($posts);
   }
+
   static function getPost($id){
     global $mysqli;
     $result = $mysqli->query("SELECT * FROM blog WHERE id=$id"); // Выбор поста из БД по ID
     echo json_encode($result->fetch_assoc());
   }
+
   static function addPost($title,$text,$author,$category,$newCategory){
     global $mysqli;
     if($category=="addNew"){ // Срабатывает при добавлении новой категории
@@ -27,6 +29,7 @@ class Blog{
       $result = $mysqli->query("INSERT INTO `blog`(`title`, `text`, `author`,`category`) VALUES ('$title','$text','$author',$category)");
     }
   }
+
   static function removePost($id){
     echo "remove post with id $id";
   }
@@ -36,6 +39,7 @@ class Blog{
     $mysqli->query("INSERT INTO `category`(`name`) VALUES ('$category')");
     echo json_encode(['result'=>'success']);
   }
+
   static function getCategory(){
     global $mysqli;
     $result = $mysqli->query("SELECT * FROM `category`");
@@ -45,5 +49,6 @@ class Blog{
       }
       echo json_encode($category);
   }
+
 }
 ?>

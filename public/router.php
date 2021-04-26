@@ -26,8 +26,11 @@
 	Reg::handlerAuth($_POST['email'],$_POST['pass']);
   }else if($uri[1]=='checkEmail'){
 	Reg::checkEmail($_POST['email']);
-  }
-
+  } else if($uri[1]=='getSession'){
+      echo $_SESSION['user_id'];
+  } else if($uri[1]=='sessionDestroy'){
+      session_destroy();
+    }
 
   else{
     require_once("index.html");
